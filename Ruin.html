@@ -6,24 +6,24 @@
         <script>
             /* Ruin.js creates the site_list var that this uses. */
 
-            var counter = site_list.length - 1;
+            var counter = 0;
 
             var popup = null;
 
             function changeFrameSite() {
-                if (counter === site_list.length - 1) {
-                    if (popup === null)
-                        popup = window.open(site_list[0]);
-
+                if (counter === site_list.length - 1)
                     counter = 0;
-                }
-                else {
+                else
                     counter++;
+
+                if (popup.closed)
+                    popup = window.open(site_list[counter]);
+                else
                     popup.location.href = site_list[counter];
-                }
             }
 
             function doOnReady() {
+                popup = window.open(site_list[0]);
                 setInterval(changeFrameSite, 5000);
             }
 
