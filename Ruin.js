@@ -63,7 +63,6 @@ var site_list = [
 "https://Creativecommons.org",
 "https://Wsj.com",
 "https://Miibeian.gov.cn",
-"https://Ovh.net",
 "https://Go.com",
 "https://Imdb.com",
 "https://Nih.gov",
