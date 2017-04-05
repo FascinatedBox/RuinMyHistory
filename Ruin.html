@@ -10,16 +10,14 @@
 
             var popup = null;
 
-            function changeFrameSite() {
-                if (counter === site_list.length - 1)
-                    counter = 0;
-                else
-                    counter++;
+            function randint(min_, max_) {
+                min_ = Math.ceil(min_);
+                max_ = Math.floor(max_);
+                return Math.floor(Math.random() * (max_ - min_ + 1)) + min_;
+            }
 
-                if (popup.closed)
-                    popup = window.open(site_list[counter]);
-                else
-                    popup.location.href = site_list[counter];
+            function changeFrameSite() {
+                popup.location.href = site_list[randint(0, site_list.length];
             }
 
             function doOnReady() {
