@@ -1,3 +1,16 @@
+Author's note: This project is no longer being maintained.
+
+The source code (it's only two files) is on the `gh-pages` branch here:
+
+https://github.com/FascinatedBox/RuinMyHistory/tree/gh-pages
+
+I created this project on a whim, and later forgot that I even made it. Since
+there's some interest in this project, I'll leave it up.
+
+Below this line is the original commit.
+
+--------------------------------------------------------------------------------
+
 RuinMyHistory
 =============
 
